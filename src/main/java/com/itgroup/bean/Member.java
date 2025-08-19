@@ -6,6 +6,7 @@ public class Member {
     private String password;
     private String gender;
     private String marriage;
+    private String birth;
     private int salary;
     private String address;
     private String manager;
@@ -14,12 +15,13 @@ public class Member {
 
     public Member(){}
 
-    public Member(String id, String name, String password, String gender, String marriage,
+    public Member(String id, String name, String password, String gender, String birth, String marriage,
                   int salary, String address, String manager) {
         this.id = id;
         this.name = name;
         this.password = password;
         this.gender = gender;
+        this.birth = birth;
         this.marriage = marriage;
         this.salary = salary;
         this.address = address;
@@ -33,6 +35,7 @@ public class Member {
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 ", gender='" + gender + '\'' +
+                ", birth='" + birth + '\'' +
                 ", marriage='" + marriage + '\'' +
                 ", salary=" + salary +
                 ", address='" + address + '\'' +
@@ -63,13 +66,20 @@ public class Member {
     public void setPassword(String password) {
         this.password = password;
     }
-
     public String getGender() {
         return gender;
     }
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String getBirth() {
+        return birth;
+    }
+
+    public void setBirth(String birth) {
+        this.birth = birth;
     }
 
     public String getMarriage() {
